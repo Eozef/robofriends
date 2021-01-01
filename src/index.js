@@ -3,15 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import CardList from './CardList';
-import { robots } from './Robots';
+import App from './App';
 
-ReactDOM.render(
-  <div>
-    <CardList robots={robots} />
-  </div>
-  , document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
